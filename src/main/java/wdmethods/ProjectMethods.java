@@ -27,18 +27,18 @@ public class ProjectMethods extends SeMethods{
 	
 	
 	@BeforeMethod(groups= {"common"})
-	@Parameters({"url","username","password"})
-	public void login(String url,String username,String password) {
+	@Parameters("url")
+	public void login(String url) {
 		
 		startApp("chrome",url);
-		WebElement eleUserName = locateElement("id", "username");
-		type(eleUserName, username);
+		/*WebElement eleUserName = locateElement("id", "username");
+		type(eleUserName, username); 
 		WebElement elePassword = locateElement("id","password");
 		type(elePassword, password);
 		WebElement eleLogin = locateElement("class", "decorativeSubmit");
 		click(eleLogin);
 		WebElement eleCRM = locateElement("xpath","//a[contains(text(),'CRM/SFA')]");
-		click(eleCRM);
+		click(eleCRM);*/
 	}
 	
 	@AfterMethod(groups="common")
@@ -51,7 +51,7 @@ public class ProjectMethods extends SeMethods{
 	}
 	
 	@DataProvider(name="fetchData")
-	public Object[][] getData() throws IOException {
+	public Object[][] fetchData() throws IOException {
 	return ReadExcel.getExcelData(dataSheetName);
 	}
 	

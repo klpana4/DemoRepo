@@ -12,10 +12,11 @@ package testcases;
 		@BeforeTest(groups = {"smoke"})
 		public void setData() {
 			testCaseName = "TC002_CreateLead";
-			testCaseDesc =  "Create a new Lead";
+			testCaseDesc =  "Create a new";
 			category = "smoke";
 			author = "sethu";
 			dataSheetName = "testdata";
+			
 		}
 		
 		@Test(groups = {"Smoke"},dataProvider = "fetchData")
@@ -32,8 +33,8 @@ package testcases;
 			type(eleLN,lName);
 			WebElement eleCreateLeadButton = locateElement("class","smallSubmit");
 			click(eleCreateLeadButton);
+			
 		}
 	}
-
 
 

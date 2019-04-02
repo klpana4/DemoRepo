@@ -1,35 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <parameter name="password" value="crmsfa"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <parameter name="url" value="http://leaftaps.com/opentaps"/>
-  <parameter name="username" value="DemoCSR"/>
-  <test thread-count="3" name="Test(failed)">
-    <groups>
-      <run>
-        <include name="smoke"/>
-        <include name="common"/>
-        <include name="sanity"/>
-        <exclude name="regression"/>
-      </run>
-    </groups>
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testcases.EditLead">
+      <class name="pomtestcases.TC001_Login">
         <methods>
-          <include name="setValues"/>
+          <include name="login" invocation-numbers="0"/>
+          <include name="startSuite"/>
+          <include name="setdata"/>
+          <include name="beforeClass"/>
           <include name="close"/>
+          <include name="afterSuite"/>
           <include name="login"/>
-          <include name="editLead"/>
         </methods>
-      </class> <!-- testcases.EditLead -->
-      <class name="testcases.DeleteLead">
-        <methods>
-          <include name="deleteLead"/>
-          <include name="close"/>
-          <include name="login"/>
-          <include name="setValues"/>
-        </methods>
-      </class> <!-- testcases.DeleteLead -->
+      </class> <!-- pomtestcases.TC001_Login -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
