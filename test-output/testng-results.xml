@@ -1,65 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="0" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="16306" started-at="2019-04-02T12:11:05Z" finished-at="2019-04-02T12:11:21Z">
+  <suite name="Default suite" duration-ms="8" started-at="2019-04-03T11:56:08Z" finished-at="2019-04-03T11:56:08Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="16306" started-at="2019-04-02T12:11:05Z" finished-at="2019-04-02T12:11:21Z">
-      <class name="pomtestcases.TC001_Login">
-        <test-method status="PASS" signature="startSuite()[pri:0, instance:pomtestcases.TC001_Login@71423665]" name="startSuite" is-config="true" duration-ms="718" started-at="2019-04-02T12:11:04Z" finished-at="2019-04-02T12:11:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startSuite -->
-        <test-method status="PASS" signature="setdata()[pri:0, instance:pomtestcases.TC001_Login@71423665]" name="setdata" is-config="true" duration-ms="0" started-at="2019-04-02T12:11:05Z" finished-at="2019-04-02T12:11:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setdata -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:pomtestcases.TC001_Login@71423665]" name="beforeClass" is-config="true" duration-ms="17" started-at="2019-04-02T12:11:05Z" finished-at="2019-04-02T12:11:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="login(java.lang.String)[pri:0, instance:pomtestcases.TC001_Login@71423665]" name="login" is-config="true" duration-ms="12130" started-at="2019-04-02T12:11:06Z" finished-at="2019-04-02T12:11:18Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://leaftaps.com/opentaps]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="login(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:pomtestcases.TC001_Login@71423665]" name="login" duration-ms="2372" started-at="2019-04-02T12:11:18Z" data-provider="fetchData" finished-at="2019-04-02T12:11:20Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[DemoSalesManager]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[crmsfa]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[green]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="close()[pri:0, instance:pomtestcases.TC001_Login@71423665]" name="close" is-config="true" duration-ms="823" started-at="2019-04-02T12:11:20Z" finished-at="2019-04-02T12:11:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:pomtestcases.TC001_Login@71423665]" name="afterSuite" is-config="true" duration-ms="525" started-at="2019-04-02T12:11:21Z" finished-at="2019-04-02T12:11:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterSuite -->
-      </class> <!-- pomtestcases.TC001_Login -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    <test name="Default test" duration-ms="8" started-at="2019-04-03T11:56:08Z" finished-at="2019-04-03T11:56:08Z">
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
